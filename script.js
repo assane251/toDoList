@@ -36,7 +36,7 @@ function build() {
     deleteBtn.href = "#";
     deleteBtn.title = "Delete";
     deleteBtn.classList.add("btn-danger");
-    deleteBtn.innerHTML = "Delete";
+    deleteBtn.innerHTML = '<i class="fa-solid fa-trash"></i>';
     deleteBtn.dataset.index = i;
     deleteBtn.addEventListener("click", function (e) {
       e.preventDefault();
@@ -49,7 +49,7 @@ function build() {
     editBtn.href = "#";
     editBtn.title = "Edit";
     editBtn.classList.add("btn-warning");
-    editBtn.innerHTML = "Edit";
+    editBtn.innerHTML = '<i class="fa-solid fa-pen"></i>';
     editBtn.dataset.index = i;
     editBtn.addEventListener("click", function (e) {
       e.preventDefault();
